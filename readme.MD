@@ -119,7 +119,7 @@
 
 
 
-def main():
+        def main():
     process = Process()
 
     while True:
@@ -146,5 +146,5 @@ def main():
             print("Pilihan tidak valid. Silakan pilih 1-5.")
 
 
-if __name__ == "__main__":
-    main()
+        if __name__ == "__main__":
+            main()
