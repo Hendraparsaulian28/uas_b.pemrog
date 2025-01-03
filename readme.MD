@@ -1,10 +1,10 @@
 # UAS BAHASA PEMOGRAMAN
 
-from tabulate import tabulate  # Modul eksternal untuk menampilkan tabel (pip install tabulate)
+        from tabulate import tabulate  # Modul eksternal untuk menampilkan tabel (pip install tabulate)
 
 
-class Mahasiswa:
-    def __init__(self, nim, nama, nilai, semester, jenis_kelamin):
+        class Mahasiswa:
+        def __init__(self, nim, nama, nilai, semester, jenis_kelamin):
         self.nim = nim
         self.nama = nama
         self.nilai = nilai
@@ -13,7 +13,7 @@ class Mahasiswa:
 
 
 
-class View:
+    class View:
     @staticmethod
     def tampilkan_data(data_mahasiswa):
         if not data_mahasiswa:
@@ -30,7 +30,7 @@ class View:
 
 
 
-class Process:
+    class Process:
     def __init__(self):
         self.data_mahasiswa = []
 
