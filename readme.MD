@@ -2,9 +2,7 @@
 
 from tabulate import tabulate  # Modul eksternal untuk menampilkan tabel (pip install tabulate)
 
-## =========================
-## CLASS DATA
-## =========================
+
 class Mahasiswa:
     def __init__(self, nim, nama, nilai, semester, jenis_kelamin):
         self.nim = nim
@@ -14,9 +12,7 @@ class Mahasiswa:
         self.jenis_kelamin = jenis_kelamin
 
 
-## =========================
-## CLASS VIEW
-## =========================
+
 class View:
     @staticmethod
     def tampilkan_data(data_mahasiswa):
@@ -33,9 +29,7 @@ class View:
         print(pesan)
 
 
-## =========================
-## CLASS PROCESS
-## =========================
+
 class Process:
     def __init__(self):
         self.data_mahasiswa = []
@@ -124,9 +118,7 @@ class Process:
         View.tampilkan_data(self.data_mahasiswa)
 
 
-## =========================
-## MAIN PROGRAM
-## =========================
+
 def main():
     process = Process()
 
@@ -154,8 +146,5 @@ def main():
             print("Pilihan tidak valid. Silakan pilih 1-5.")
 
 
-## =========================
-## JALANKAN PROGRAM
-## =========================
 if __name__ == "__main__":
     main()
